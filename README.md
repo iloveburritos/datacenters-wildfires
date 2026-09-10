@@ -1,6 +1,15 @@
-# US Wildfire Perimeters Map
+# US Wildfire Perimeters Map + AI Data Centers
 
-Interactive Leaflet map of historical US wildfire perimeters.
+Interactive Leaflet maps of historical US wildfire perimeters, with an optional overlay of large AI data center campuses.
+
+## Combined map: AI data centers x wildfires
+
+- **File:** `ai-datacenters-x-wildfires.html` - self-contained; open in any browser (needs internet for basemap tiles and the Leaflet CDN)
+- **Data centers:** aidatacenterindex.com (CC BY 4.0, data as of Jul 2026); 56 continental US sites plotted (28.6 GW) - 34 operational, 12 under construction, 10 planned
+- **Features:** status toggles (operational / under construction / planned), dots sized by MW, per-site popup with operator, capacity, and distance to nearest burn since 2016; headline stat: 10 of 21 campuses >= 500 MW sit within 50 miles of land burned since 2016
+- **Fires layer:** same NIFC/WFIGS data and controls as the fire-only map below
+
+## Fire-only map
 
 - **Data source:** NIFC / WFIGS Interagency Fire Perimeter History (open data)
 - **Coverage:** Continental US, 2016 through September 2026 (2026 partial)
