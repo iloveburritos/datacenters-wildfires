@@ -9,7 +9,7 @@ Interactive Leaflet maps of historical US wildfire perimeters, with an optional 
 - **Features:** four status toggles (operational / under construction / planned / announced), dots sized by MW, per-site popup with operator, capacity, source links, and distance to nearest burn since 2016
 - **Headline stats (recomputed on this dataset):** 36 of 59 AI campuses >= 500 MW sit within 50 miles of land that burned since 2016; 15 are within 25 miles
 - **Climate-risk heat layer:** FEMA National Risk Index (public domain), county-level all-hazard and wildfire risk ratings; separate toggle, off by default
-- **Fires layer:** same NIFC/WFIGS data and controls as the fire-only map below
+- **Fires layer:** NIFC/WFIGS Interagency Fire Perimeter History (open data) - continental US, 2016 through September 2026 (2026 partial), wildfires >= 300 acres, prescribed burns excluded; filter by year and minimum fire size, click any fire for name/year/acres, annual acres bar chart
 - **Related:** popups link out to dcmap.us for more on a site (their terms prohibit copying their dataset, so we link rather than import)
 
 ## Dataset: us_data_centers_100mw_plus.csv
@@ -22,11 +22,3 @@ Interactive Leaflet maps of historical US wildfire perimeters, with an optional 
 - **`mw_basis`** notes what the MW figure represents when it is not a like-for-like IT-load figure (e.g. announced campus capacity vs. delivered capacity, permitted on-site generation)
 - **`coord_source`** flags coordinate quality: rows from aidatacenterindex records carry site coordinates, while `geocoded` rows are city-level approximations and should not be read as exact site locations
 - **Known coverage gaps:** hyperscalers frequently do not disclose campus-level MW, so some large operational campuses are understated or missing; announced vs. delivered capacity is mixed across the industry and flagged per-row in `mw_basis`/`notes` where known
-
-## Fire-only map
-
-- **Data source:** NIFC / WFIGS Interagency Fire Perimeter History (open data)
-- **Coverage:** Continental US, 2016 through September 2026 (2026 partial)
-- **Scope:** Wildfires >= 300 acres; prescribed burns excluded
-- **File:** `us-wildfire-perimeters-2016-2026.html` - self-contained; open in any browser (needs internet for the basemap tiles and Leaflet CDN)
-- **Features:** filter by year and minimum fire size, click any fire for name/year/acres, annual acres bar chart
