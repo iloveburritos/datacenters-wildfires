@@ -1,4 +1,4 @@
-# US Wildfire Perimeters Map + AI Data Centers
+# Data Centers + Wildfires
 
 Interactive Leaflet maps of historical US wildfire perimeters, with an optional overlay of large AI data center campuses and a county-level climate-risk heat layer.
 
